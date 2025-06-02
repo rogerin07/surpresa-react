@@ -1,0 +1,134 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.app-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: 90%;
+  box-sizing: border-box; /* Ensures padding doesn't increase total width */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 22px); /* Considera padding e border */
+  font-size: 16px;
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Specific styles for TypewriterText in SceneFinal */
+.texto-final-paragrafo span {
+    font-size: 1.1em !important;
+    line-height: 1.6 !important;
+}
+
+/* Styles for image container in SceneFinal */
+.image-gallery-container {
+  margin-top: 30px;
+  height: 400px; /* Fixed height for image gallery */
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image-gallery-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* or 'cover' depending on preference */
+}
+
+.typewriter {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+
+/* Styles for radio buttons in SceneForm2 */
+fieldset {
+  border: none;
+  margin: 20px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset div {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Spacing between radio buttons */
+}
+
+fieldset label {
+  display: inline-block; /* For labels next to radio buttons */
+  margin-bottom: 0;
+  font-weight: normal;
+}
