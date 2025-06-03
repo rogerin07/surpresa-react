@@ -15,11 +15,11 @@ const SurpresaFinal = () => {
       style={{
         textAlign: "center",
         padding: "2rem",
-        background: "black",
+        background: "white",
         minHeight: "100vh",
       }}
     >
-      <h1 style={{ color: "white" }}>Última Surpresa!</h1>
+      <h1 style={{ color: "black" }}>Última Surpresa!</h1>
       <video width="80%" controls autoPlay>
         <source
           src={`${import.meta.env.BASE_URL}/videos/surpresa.mp4`}
