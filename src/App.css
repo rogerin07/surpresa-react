@@ -18,11 +18,12 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   max-width: 600px;
   width: 90%;
-  box-sizing: border-box; /* Ensures padding doesn't increase total width */
+  box-sizing: border-box;
+  /* Ensures padding doesn't increase total width */
 }
 
 button {
-  background-color: #007bff;
+  background-color: #6a0baa;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -34,7 +35,7 @@ button {
 }
 
 button:hover:not(:disabled) {
-  background-color: #0056b3;
+  background-color: #6a0baa;
 }
 
 button:disabled {
@@ -48,9 +49,11 @@ input[type="number"] {
   margin: 5px 0 15px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: calc(100% - 22px); /* Considera padding e border */
+  width: calc(100% - 22px);
+  /* Considera padding e border */
   font-size: 16px;
-  box-sizing: border-box; /* Ensures padding and border are included in the width */
+  box-sizing: border-box;
+  /* Ensures padding and border are included in the width */
 }
 
 label {
@@ -83,14 +86,15 @@ label {
 
 /* Specific styles for TypewriterText in SceneFinal */
 .texto-final-paragrafo span {
-    font-size: 1.1em !important;
-    line-height: 1.6 !important;
+  font-size: 1.1em !important;
+  line-height: 1.6 !important;
 }
 
 /* Styles for image container in SceneFinal */
 .image-gallery-container {
   margin-top: 30px;
-  height: 400px; /* Fixed height for image gallery */
+  height: 400px;
+  /* Fixed height for image gallery */
   position: relative;
   overflow: hidden;
   border-radius: 8px;
@@ -102,7 +106,8 @@ label {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain; /* or 'cover' depending on preference */
+  object-fit: contain;
+  /* or 'cover' depending on preference */
 }
 
 .typewriter {
@@ -124,11 +129,13 @@ fieldset {
 fieldset div {
   display: flex;
   align-items: center;
-  gap: 15px; /* Spacing between radio buttons */
+  gap: 15px;
+  /* Spacing between radio buttons */
 }
 
 fieldset label {
-  display: inline-block; /* For labels next to radio buttons */
+  display: inline-block;
+  /* For labels next to radio buttons */
   margin-bottom: 0;
   font-weight: normal;
 }
