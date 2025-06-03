@@ -43,7 +43,7 @@ const TypewriterText = ({
       {words.map((word, wordIndex) => (
         <motion.span
           key={wordIndex}
-          style={{ display: "inline-block", marginRight: "6px" }} // separa palavras
+          style={{ display: "inline-block", marginRight: "6px" }}
         >
           {Array.from(word).map((char, charIndex) => (
             <motion.span key={charIndex} variants={letterVariants}>

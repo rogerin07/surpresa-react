@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 
 const SurpresaFinal = () => {
   useEffect(() => {
-    // Garante que qualquer áudio de fundo seja pausado
     const audios = document.getElementsByTagName("audio");
     for (let audio of audios) {
       audio.pause();
