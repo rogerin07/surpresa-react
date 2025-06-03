@@ -23,7 +23,7 @@ body {
 }
 
 button {
-  background-color: #6a0baa;
+  background-color: #7310b4;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -35,7 +35,7 @@ button {
 }
 
 button:hover:not(:disabled) {
-  background-color: #6a0baa;
+  background-color: #7310b4;
   color: white;
   ;
 }
